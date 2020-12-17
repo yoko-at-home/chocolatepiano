@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+        <meta name="description" content="ショコラピアノ教室 is where you bloom">
         <meta property="og:url" content="https://chocolatpianoar.netlify.app" />
         <meta property="og:type" content=" ページの種類" />
         <meta property="og:title" content="ショコラピアノ教室 | 相模原 古淵 大野台" />
         <meta property="og:description" content=" ページのディスクリプション" />
         <meta property="og:site_name" content="ショコラピアノ教室" />
-        <meta property="og:image" content="https://chocolatpianoar.netlify.app/img/hero.png" />
+        <meta property="og:image" content="https://chocolatpianoar.netlify.app/img/hero.jpg" />
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+        <link rel="manifest" href="manifest.json" />
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" />
+    	<link rel="apple-touch-icon" href="img/icons/icon-512x512.png" />
+		<meta name="theme-color"content="#d5b6e8" />
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
         <title>ショコラピアノ教室 | 相模原 古淵 大野台</title>
     </head>
 <body>
-        <!-- <div class="navigation">
+         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
             </label>
@@ -33,14 +34,14 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>ショコラピアノ教室ホーム</a></li>
-                    <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>02</span>講師あいさつ</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>レッスン</a></li>
-                    <li class="navigation__item"><a href="#profile" class="navigation__link"><span>04</span>講師プロフィール</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>お問い合わせ/体験レッスン</a></li>
+                    <li class="navigation__item"><a href="index.html#section-tours" class="navigation__link">レッスン</a></li>
+                    <li class="navigation__item"><a href="index.html#section-profile" class="navigation__link">講師プロフィール</a></li>
+                    <li class="navigation__item"><a href="index.html#section-tweet" class="navigation__link">お知らせ</a></li>
+                    <li class="navigation__item"><a href="index.html#popup" class="navigation__link">お問い合わせ</a>
+                    </li>
                     </ul>
             </nav>
-        </div> -->
+        </div>
 
         <header class="header">
             <div class="header__logo-box">
@@ -83,11 +84,28 @@
                     <div class="col-1-of-2">
                         <div class="composition">
 
-                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
 
-                            <img srcset="img/nat-2.jpg 300w, img/nat-2.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2" class="composition__photo composition__photo--p2" src="img/nat-6.jpg">
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
 
-                            <img srcset="img/nat-3.png 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.png">
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
+
+
+                            <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
 
                         </div>
                     </div>
@@ -274,6 +292,11 @@
                         <source src="img/video.webm" type="video/webm">Your browser is not supported!
                     </video>
                 </div>
+                <div class="bg-mobile">
+                    <div class="bg-mobile__content">
+                        <img src="img/video.jpg" alt='chocolatpiano教室'>
+                    </div>
+                </div>
 
                 <div class="u-center-text u-margin-bottom-big" id="section-profile">
                     <h2 class="heading-secondary">
@@ -293,25 +316,48 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
                                 ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
                                 repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                                ducimus quam nisi exercitationem omnis earum qui. am nisi exercitationem omnis earum qui.
                             </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img src="img/nat-9.jpg" alt="Person on a tour" class="story__img">
+                            <figcaption class="story__caption">Jack Wilson</figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
+                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
+                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
                <!-- <div class="u-center-text u-margin-top-huge">
                     <a href="#" class="btn-text">生徒さんの声やよくある質問もあるといいかもしれません →</a>
                 </div> -->
             </section>
 
 
+
             <section class="section-tweet" id="section-tweet">
+            <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v9.0" nonce="IdqHNPKQ"></script>
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary2">
                         ショコラピアノ教室からのお知らせ
                     </h2>
                     <div class="col-3-of-1">&nbsp;</div>
-                     <a class="twitter-timeline" data-lang="en" data-width="500" data-height="800" data-theme="dark" href="https://twitter.com/PianoSakurai?ref_src=twsrc%5Etfw">Tweets by PianoSakurai</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                     <div class="fb-page" data-href="https://www.facebook.com/chocolatpianoa" data-tabs="timeline" data-width="600" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chocolatpianoa" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chocolatpianoa">相模原市ピアノ教室 ショコラピアノ教室 とりごえあや</a></blockquote></div>
                 </div>
             </section>
 
@@ -343,7 +389,7 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Webサイト制作は<a href="https://twitter.com/yokoiwasaki6" class="footer__link">Yoko</a> までお問い合わせください。
+                        Webサイト制作は<a href="https://twitter.com/yokoiwasaki6" class="footer__link">Yoko</a> までお気軽にお問い合わせください♪
                     </p>
                 </div>
             </div>
@@ -352,7 +398,7 @@
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="img/nat-8a.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">×</a>
@@ -364,5 +410,17 @@
                 </div>
             </div>
         </div>
+		<script>
+		if ('serviceWorker' in navigator) {
+  window.addEventListener('load', ()=>  {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => {
+        console.log('サービスワーカーの登録が以下のスコープで完了! ', reg.scope)
+      })
+      .catch(err => {
+        return console.log('サービスワーカーの登録が失敗: ', err)
+      });
+  });
+}</script>
 </body>
 </html>
