@@ -1,0 +1,29 @@
+{
+  "name": "ショコラピアノ教室 | 相模原 古淵 大野台",
+  "short_name": "ショコラピアノ教室",
+  "theme_color": "#d5b6e8",
+  "start_url": "./index.html",
+  "background_color": "#d6f321",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+
+  "icons": [
+    {
+      "src": "./img/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./img/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./img/icons/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
