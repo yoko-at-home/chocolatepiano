@@ -13,7 +13,7 @@
         <meta property="og:image" content="img/hero.jpg" />
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="manifest" href="manifest.json" />
+        <!-- <link rel="manifest" href="manifest.json" /> -->
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="apple-touch-icon" href="img/icons/icon-192x192.png" />
     	<link rel="apple-touch-icon" href="img/icons/icon-512x512.png" />
@@ -425,17 +425,6 @@
                 </div>
             </div>
         </div>
-		<script>
-		if ('serviceWorker' in navigator) {
-  window.addEventListener('load', ()=>  {
-    navigator.serviceWorker.register('sw.js')
-      .then(reg => {
-        console.log('サービスワーカーの登録が以下のスコープで完了! ', reg.scope)
-      })
-      .catch(err => {
-        return console.log('サービスワーカーの登録が失敗: ', err)
-      });
-  });
-}</script>
+
 </body>
 </html>

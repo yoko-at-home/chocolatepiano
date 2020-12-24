@@ -1,21 +1,21 @@
-const staticCacheName = 'static-cache-v4'; // インストール時にキャッシュ」
-const dynamicCacheName = 'dynamic-cache-v1'; // 動的にキャッシュ
-const assets = [
-  './',
-  './index.html',
-  './pages/fallback.html',
-  './css/style.css',
-  './img/nat-6.png',
-];
+// const staticCacheName = 'static-cache-v4'; // インストール時にキャッシュ」
+// const dynamicCacheName = 'dynamic-cache-v1'; // 動的にキャッシュ
+// const assets = [
+//   './',
+//   './index.html',
+//   './pages/fallback.html',
+//   './css/style.css',
+//   './img/nat-6.png',
+// ];
 
 // サービスワーカーのインストール（初回インストール時にアセットをキャッシュする）
-self.addEventListener('install', evt => {
-  evt.waitUntil(
-    caches.open(staticCacheName).then(cache => {
-        cache.addAll(assets);
-    })
-  );
-});
+// self.addEventListener('install', evt => {
+//   evt.waitUntil(
+//     caches.open(staticCacheName).then(cache => {
+//         cache.addAll(assets);
+//     })
+//   );
+// });
 
 // 古いキャッシュを削除する（staticCacheNameが変わったら）
 self.addEventListener('activae', evt => {
