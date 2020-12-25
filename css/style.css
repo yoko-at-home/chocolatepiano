@@ -251,8 +251,11 @@
   .heading-secondary:hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
   transform:skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow:0.5rem 1rem 2rem rgba(0,0,0,0.2)}
-  .heading-tertiary{font-size:1.6rem;
+  .heading-tertiary{font-size:2rem;
   font-weight:700;
+   @media (min-width: 415px) {
+  .heading-tertiary{font-size:1.6rem;
+  font-weight:700;}
   text-transform:uppercase}
   .paragraph{font-size:1.6rem}
   .paragraph:not(:last-child){margin-bottom:3rem}
@@ -270,7 +273,10 @@
   -o-object-fit:cover;
   object-fit:cover}
   .bg-mobile{
-    position:absolute;
+   background-image: url(../img/video-mobile.jpg);
+   background-position: center;
+   background-size: ;
+  position:absolute;
   top:0;
   left:0;
   height:100%;
@@ -281,14 +287,14 @@
   width:100%;
   -o-object-fit:cover;
   object-fit:cover}
-  @media(min-width:374px){
+  @media(min-width:415px){
     .bg-mobile{
     display:none;
     }
   }
   .bg-video{
 display:none;}
-  @media(min-width:374px){
+  @media(min-width:415px){
   .bg-video{
   display:block;
   position:absolute;
@@ -331,11 +337,11 @@ display:none;}
   .btn--white::after{background-color:#fff}
   .btn--green{background-color:#c0d175;
   color:#fff}
-  .btn--pink{background-color:#E49FB5;
+  .btn--pink{background-color:#e4628b;
   color:#fff}
 
   .btn--green::after{background-color:#c0d175}
-  .btn--pink::after{background-color:#E49FB5}
+  .btn--pink::after{background-color:#e4628b}
   .btn::after{content:"";
   display:inline-block;
   height:100%;
@@ -407,12 +413,12 @@ display:none;}
   clip-path:polygon(0 0, 100% 0, 100% 85%, 0 100%);
   border-top-left-radius:3px;
   border-top-right-radius:3px}
-  .card__picture--1{background-image:url(../img/nat-5.jpg);
-  background-image:url(../img/nat-5.jpg)}
-  .card__picture--2{background-image:url(../img/nat-6.jpg);
-  background-image:url(../img/nat-6.jpg)}
-  .card__picture--3{background-image:url(../img/nat-7.jpg);
-  background-image:url(../img/nat-7.jpg)}
+  .card__picture--1{background-image:url(../img/card_bg_1.jpg);
+  background-image:url(../img/card_bg_1.jpg)}
+  .card__picture--2{background-image:url(../img/card_bg_2.jpg);
+  background-image:url(../img/card_bg_2.jpg)}
+  .card__picture--3{background-image:url(../img/card_bg_3.jpg);
+  background-image:url(../img/card_bg_3.jpg)}
   .card__heading{font-size:2.8rem;
   font-weight:300;
   text-transform:uppercase;
@@ -478,8 +484,17 @@ display:none;}
   padding:7rem 4rem 4rem 4rem}
   .card__price-box{margin-bottom:3rem}
   .card__price-value{font-size:4rem}}
-  .composition{position:relative}
+  .composition{position:relative; width: 100%;}
   .composition__photo{width:55%;
+  -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.4);
+  box-shadow:0 1.5rem 4rem rgba(0,0,0,0.4);
+  border-radius:2px;
+  position:absolute;
+  z-index:10;
+  -webkit-transition:all .2s;
+  transition:all .2s;
+  outline-offset:2rem}
+  .composition__photo_bottom{width:30%;
   -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.4);
   box-shadow:0 1.5rem 4rem rgba(0,0,0,0.4);
   border-radius:2px;
@@ -492,6 +507,13 @@ display:none;}
   .composition__photo{float:left;
   position:relative;
   width:33.33333333%;
+  -webkit-box-shadow:0 1.5rem 3rem rgba(0,0,0,0.2);
+  box-shadow:0 1.5rem 3rem rgba(0,0,0,0.2)}}
+  .composition__photo_bottom{float:center
+    margin-bottom:5rem;
+  position:relative;
+  width:28%;
+  margin-left:3rem;
   -webkit-box-shadow:0 1.5rem 3rem rgba(0,0,0,0.2);
   box-shadow:0 1.5rem 3rem rgba(0,0,0,0.2)}}
   .composition__photo--p1{left:0;
@@ -640,19 +662,26 @@ display:none;}
   transform:translate(-50%, -50%) scale(0.25);
   -webkit-transition:all .5s .2s;
   transition:all .5s .2s}
-  .popup__left{width:33.333333%;
+  .popup__left{width:45%;
   display:table-cell;
 background-image: url(../img/nat-8a.jpg);
 background-size: cover;
-background-position:top;
+background-position:center;
 background-repeat: repeat;
 /* background-color: rgba(0,0,0,0.1); */
 }
-  .popup__right{width:66.6666667%;
+  .popup__right{width:60%;
+  display:table-cell;
+  text-align: center;
+  vertical-align:middle;
+  padding:8rem 5rem}
+  @media(min-width:415px){
+   .popup__right{width:60%;
   display:table-cell;
   text-align: center;
   vertical-align:middle;
   padding:3rem 5rem}
+  }
   .popup__center{width:100%;
   display:table-cell;
   text-align: center;
@@ -781,7 +810,7 @@ background-repeat: repeat;
   transition:all .2s}
 
   .popup__navigation{
-    /* border-top:1px solid #E49FB5; */
+    /* border-top:1px solid #e4628b; */
     text-align: center;
   padding-top:2rem;
   display:inline-block}
@@ -790,8 +819,8 @@ background-repeat: repeat;
   .popup__list{list-style:none}
   .popup__item{display:inline-block}
   .popup__item:not(:last-child){margin-right:1.5rem}
-  .popup__link:link,.popup__link:visited{color:#E49FB5;
-  /* background-color:#E49FB5; */
+  .popup__link:link,.popup__link:visited{color:#e4628b;
+  /* background-color:#e4628b; */
   text-decoration:none;
   text-transform:uppercase;
   display:inline-block;
@@ -871,7 +900,7 @@ background-repeat: repeat;
   right:3rem}}
   .navigation__background{
   height:1.3rem;
-  width:1rem;
+  width:1.3rem;
   border-radius:50%;
   position:fixed;
   top:7rem;
@@ -906,15 +935,14 @@ background-repeat: repeat;
   transform:translate(-50%, -50%);
   list-style:none;
   width:100%}
-  @media(min-width:374px){
+  @media(min-width:415px){
     .navigation__list{position:absolute;
       text-align:center!important;
       top: 25%;
-      left: 80%;
+      right: 0%;
       -webkit-transform:translate(-50%, -50%);
       transform:translate(-50%, -50%);
       list-style:none;
-      text-align:center;
       width:100%}
     }
   .navigation__item{margin:1rem}
@@ -974,8 +1002,8 @@ background-repeat: repeat;
   margin-top:-10vh}
   @media only screen and (max-width: 56.25em){.section-about{padding:10rem 0}}
   .section-features{padding:20rem 0;
-  background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(230, 252, 135, 0.3)), to(rgba(138, 180, 40, 0.3))),url(../img/nat-4.jpg);
-  background-image:linear-gradient(to right bottom, rgba(191, 213, 111, 0.3), rgba(150, 180, 40, 0.5)),url(../img/nat-4.jpg);
+  background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(230, 252, 135, 0.3)), to(rgba(138, 180, 40, 0.3))),url(../img/section_about_background.jpg);
+  background-image:linear-gradient(to right bottom, rgba(191, 213, 111, 0.3), rgba(150, 180, 40, 0.5)),url(../img/section_about_background.jpg);
   background-size:cover;
   background-position: left;
   -webkit-transform:skewY(-7deg);
@@ -995,15 +1023,15 @@ background-repeat: repeat;
   background-image:-webkit-gradient(linear, left top, right bottom, from(#acdd52), to(#ebcbf3));
   background-image:linear-gradient(to right bottom, #acdd52, #ebcbf3)}
   @media only screen and (max-width: 56.25em){.section-book{padding:10rem 0}}
-  .book{background-image:linear-gradient(105deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 50%, transparent 50%),url(../img/nat-4.jpg);
+  .book{background-image:linear-gradient(105deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 50%, transparent 50%),url(../img/section_about_background.jpg);
   background-size:100%;
   border-radius:3px;
   -webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,0.2);
   box-shadow:0 1.5rem 4rem rgba(0,0,0,0.2)}
-  @media only screen and (max-width: 75em){.book{background-image:linear-gradient(105deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 65%, transparent 65%),url(../img/nat-4.jpg);
+  @media only screen and (max-width: 75em){.book{background-image:linear-gradient(105deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 65%, transparent 65%),url(../img/section_about_background.jpg);
   background-size:cover}}
-  @media only screen and (max-width: 56.25em){.book{background-image:-webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0.6)), to(rgba(255,255,255,0.6))),url(../img/nat-4.jpg);
-  background-image:linear-gradient(to right, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%),url(../img/nat-4.jpg)}}
+  @media only screen and (max-width: 56.25em){.book{background-image:-webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0.6)), to(rgba(255,255,255,0.6))),url(../img/section_about_background.jpg);
+  background-image:linear-gradient(to right, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 100%),url(../img/section_about_background.jpg)}}
   .book__form{width:50%;
   padding:6rem}
   @media only screen and (max-width: 75em){.book__form{width:65%}}
@@ -1014,7 +1042,7 @@ background-repeat: repeat;
   padding:25rem 0 15rem 0;
   margin-top:-10rem;}
   @media only screen and (max-width: 56.25em){.section-tweet{padding:10rem 5rem}}
-  @media (min-width:374px){
+  @media (min-width:415px){
  .section-tweet{
   padding:25rem 0 15rem 0;
   margin-top:-10rem;}
@@ -1024,7 +1052,7 @@ background-repeat: repeat;
   @media only screen and (max-width: 56.25em){
     .section-stories{padding:10rem 0}
   }
-  .heading-secondary2{margin-top:10vh;
+  .heading-secondary2{margin-top:0vh;
   font-size:3.5rem;
   text-transform:uppercase;
   font-weight:700;
