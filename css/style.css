@@ -262,8 +262,8 @@ font-weight:700}
 width:100%;
 -o-object-fit:cover;
 object-fit:cover}
-.bg-mobile{background-image:url(../img/hero.jpg);
-  background-size:cover ;
+.bg-mobile{background-image:url(../img/video-mobile.jpg);
+background-size:cover ;
 background-position:center;
 position:absolute;
 top:0;
@@ -399,6 +399,8 @@ background-image:url(../img/card_bg_1.jpg)}
 background-image:url(../img/card_bg_2.jpg)}
 .card__picture--3{background-image:url(../img/card_bg_3.jpg);
 background-image:url(../img/card_bg_3.jpg)}
+.card__picture--4{background-image:url(../img/card_bg_4.jpg);
+background-image:url(../img/card_bg_4.jpg)}
 .card__heading{font-size:2.8rem;
 font-weight:300;
 text-transform:uppercase;
@@ -715,19 +717,22 @@ transform:translateX(-3rem) skewX(12deg);
 position:relative;
 overflow:hidden;
 border-radius:50%}
-@supports (-webkit-clip-path:polygon(0 0)) or (clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){.story__shape{-webkit-clip-path:circle(50% at 50% 50%);
-clip-path:circle(50% at 50% 50%);
+@supports (-webkit-clip-path:polygon(0 0)) or (clip-path:polygon(0 0)) or (-webkit-clip-path:polygon(0 0)){
+  .story__shape{-webkit-clip-path:circle(50% at 50% 50%);
+clip-path:circle(100% at 50% 50%);
 -webkit-shape-outside:circle(50% at 50% 50%);
 shape-outside:circle(50% at 50% 50%);
 border-radius:none}}
-@media only screen and (max-width:37.5em){.story__shape{-webkit-transform:translateX(-3rem) skewX(0);
+@media only screen and (max-width:37.5em){
+  .story__shape{-webkit-transform:translateX(-3rem) skewX(0);
 transform:translateX(-3rem) skewX(0)}}
 .story__img{height:100%;
--webkit-transform:translateX(-4rem) scale(1.4);
-transform:translateX(-4rem) scale(1.4);
+-webkit-transform:translateX(2rem) scale(1.4);
+transform:translateX(2rem) scale(1.4);
 -webkit-backface-visibility:hidden;
 backface-visibility:hidden;
 -webkit-transition:all .5s;
+background-position: top;
 transition:all .5s}
 .story__text {-webkit-transform:skewX(12deg);
   color:#333;
@@ -826,8 +831,8 @@ margin-bottom:6rem}}
 .row .col-2-of-4{width:calc(2 * ((100% - 3 * 6rem)/ 4) + 6rem)}
 .row .col-3-of-4{width:calc(3 * ((100% - 3 * 6rem)/ 4) + 2 * 6rem)}
 .header{height:85vh;
-background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(189,224,132,.3)),to(rgba(157,40,180,.3))),url(../img/profile-dress.jpg);
-background-image:linear-gradient(to right bottom,rgba(177,213,111,.3),rgba(157,40,180,.5)),url(../img/profile-dress.jpg);
+background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(189,224,132,.3)),to(rgba(157,40,180,.3))),url(../img/hero.jpg);
+background-image:linear-gradient(to right bottom,rgba(177,213,111,.3),rgba(157,40,180,.5)),url(../img/hero.jpg);
 background-size:cover;
 background-position:top;
 position:relative}
@@ -836,8 +841,8 @@ position:relative}
 clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 height:95vh} */
 }
-@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),only screen and (min-resolution:192dpi) and (min-width:37.5em),only screen and (min-width:125em){.header{background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(210,111,213,.3)),to(rgba(140,40,180,.5))),url(../img/profile-dress.jpg);
-background-image:linear-gradient(to right bottom,rgba(126,213,111,.3),rgba(147,40,180,.5)),url(../img/profile-dress.jpg)}}
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:37.5em),only screen and (min-resolution:192dpi) and (min-width:37.5em),only screen and (min-width:125em){.header{background-image:-webkit-gradient(linear,left top,right bottom,from(rgba(210,111,213,.3)),to(rgba(140,40,180,.5))),url(../img/hero.jpg);
+background-image:linear-gradient(to right bottom,rgba(126,213,111,.3),rgba(147,40,180,.5)),url(../img/hero.jpg)}}
 @media only screen and (max-width:37.5em){.header{-webkit-clip-path:polygon(0 0,100% 0,100% 85vh,0 100%);
 clip-path:polygon(0 0,100% 0,100% 85vh,0 100%)}}
 .header__logo-box{position:absolute;
