@@ -443,21 +443,29 @@
                                     </h2>
                                 </div>
                             <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                                <div class="form__group" style="display:none">
+                                    <label for="subject" class="form__label">ショコラピアノ教室ホームページからの問い合わせ
+                                    <input type="subject" subject="subject" id="subject">
+                                    </label>
+                                </div>
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="お名前" id="name" name="name" required>
-                                    <label for="name" class="form__label">お名前</label>
+                                    <label for="name" class="form__label">お名前
+                                    <input type="text" name="name" class="form__input" placeholder="お名前" id="name" required/>
+                                    </label>
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="メールアドレス" id="email" name="email" required>
-                                    <label for="email" class="form__label">メールアドレス</label>
+                                    <label for="email" class="form__label">メールアドレス
+                                    <input type="email" name="email" class="form__input" placeholder="メールアドレス" id="email" required/>
+                                    </label>
                                 </div>
                                 <div class="form__group">
-                                    <textarea type="text" class="form__input" placeholder="ご用件" name ="message" id="message" required rows="7" cols="40"></textarea>
-                                    <label for="message" class="form__label">ご用件</label>
+                                    <label for="message" class="form_label">ご用件
+                                    <textarea name ="message" class="form__input" placeholder="ご用件" id="message" required rows="7"></textarea>
+                                    </label>
                                 </div>
                                 <div class="field">
-                                    <div class="field-child" data-netlify-recaptcha="true"></div>
+                                    <div data-netlify-recaptcha="true"></div>
                                 </div>
                                 <div class="form__group"><br/>
                                     <button type="submit" class="btn btn--green">送信 &rarr;</button>
