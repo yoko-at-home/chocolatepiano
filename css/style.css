@@ -899,7 +899,7 @@ width:0;
 transition:all .8s cubic-bezier(.68,-.55,.265,1.55)}
 .navigation__list{position:absolute;
 text-align:left!important;
-top:30%;
+top:35%;
 left:80%;
 -webkit-transform:translate(-50%,-50%);
 transform:translate(-50%,-50%);
@@ -907,7 +907,7 @@ list-style:none;
 width:100%}
 @media(min-width:415px){.navigation__list{position:absolute;
 text-align:center!important;
-top:50%;
+top:35%;
 right:3rem;
 -webkit-transform:translate(-50%,-50%);
 transform:translate(-50%,-50%);
