@@ -1021,3 +1021,14 @@ transition:all .2s}
 .heading-secondary2:hover{-webkit-transform:skewY(2deg) skewX(15deg) scale(1.1);
 transform:skewY(2deg) skewX(15deg) scale(1.1);
 text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
+
+.field{
+  width:200px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.field-child{
+  width:200px;
+  display:flex;
+}
