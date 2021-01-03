@@ -211,7 +211,7 @@ text-transform:uppercase;
 -webkit-backface-visibility:hidden;
 backface-visibility:hidden;
 margin-bottom:6rem}
-.heading-primary--main{display:block;
+.heading-primary--main_mobile{display:block;
 font-size:6rem;
 font-weight:400;
 letter-spacing:2rem;
@@ -221,7 +221,22 @@ animation-name:moveInLeft;
 animation-duration:1s;
 -webkit-animation-timing-function:ease-out;
 animation-timing-function:ease-out}
-@media only screen and (max-width:37.5em){.heading-primary--main{letter-spacing:1rem;
+.heading-primary--main{
+  display:none;
+font-size:6rem;
+font-weight:400;
+letter-spacing:2rem;
+-webkit-animation-name:moveInLeft;
+animation-name:moveInLeft;
+-webkit-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-timing-function:ease-out;
+animation-timing-function:ease-out}
+@media only screen and (min-width:37.5em){
+  .heading-primary--main_mobile{display:none}
+  .heading-primary--main{
+    display:block;
+    letter-spacing:1rem;
 font-family:5rem}}
 .heading-primary--sub{display:block;
 font-size:2rem;
