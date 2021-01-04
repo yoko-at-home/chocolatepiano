@@ -1090,7 +1090,7 @@ padding:15rem 0}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 60vh;
   border-radius: 5px;
   color: #fff;
   cursor:pointer;
@@ -1098,6 +1098,21 @@ padding:15rem 0}
   margin:2px;
   position:relative;
   -webkit-transition:all 700ms ease-in;
+}
+@media only screen and (min-width:56.25em){
+  .panel{
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-radius: 5px;
+  color: #fff;
+  cursor:pointer;
+  flex:0.5;
+  margin:2px;
+  position:relative;
+  -webkit-transition:all 700ms ease-in;
+}
 }
 
 .panel h3{
@@ -1147,4 +1162,8 @@ display:none;
     .horizontal-list >li{
       margin:1rem;
       list-style: none;
+    }
+
+    a{
+      text-decoration: none;
     }
