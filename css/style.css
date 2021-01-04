@@ -1040,9 +1040,9 @@ padding:6rem}
   .section-tweet{padding:25rem 0 15rem 0;
 margin-top:-10rem}}
 @media only screen and (max-width:56.25em){
-  .section-activity{padding:10rem 0}}
+  .section-activity{padding:5rem 0}}
 @media (min-width:415px){
-  .section-activity{padding:25rem 0 15rem 0;
+  .section-activity{padding:10rem 0 15rem 0;
 margin-top:-10rem}}
 .section-stories{position:relative;
 padding:15rem 0}
@@ -1065,9 +1065,10 @@ padding:15rem 0}
 /* 講師演奏活動CSS */
 /* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
 
-/* *{
-  box-sizing: border-box;
-} */
+.feature-box__text{
+  font-size: 1.5rem;
+  padding:2rem;
+}
 
 .picture__wrapper{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -1084,6 +1085,7 @@ padding:15rem 0}
   display:flex;
   flex-direction: row;
   width: 100vw;
+  max-width:900px;
 }
 
 .panel{
@@ -1104,7 +1106,7 @@ padding:15rem 0}
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 70vh;
   border-radius: 5px;
   color: #fff;
   cursor:pointer;
@@ -1112,7 +1114,7 @@ padding:15rem 0}
   margin:2px;
   position:relative;
   -webkit-transition:all 700ms ease-in;
-}
+  }
 }
 
 .panel h3{
@@ -1133,8 +1135,8 @@ padding:15rem 0}
 
 
 @media (max-width:480px){
-  .panel__container{
-    width: 100vw;
+.panel__container{
+  width: 100vw;
   }
 
 .panel:nth-of-type(4),
@@ -1148,7 +1150,7 @@ display:none;
   position: relative;
   z-index: 1000;
 }
-    .horizontal-list {
+ .horizontal-list {
       display: flex;
       flex-direction: row;
       /* position: absolute; */
@@ -1159,7 +1161,7 @@ display:none;
       -webkit-overflow-scrolling: touch;
       overflow-x: scroll;
     }
-    .horizontal-list >li{
+    .horizontal-list > li{
       margin:1rem;
       list-style: none;
     }
@@ -1167,3 +1169,12 @@ display:none;
     a{
       text-decoration: none;
     }
+
+  .hide{
+      display: block;
+    }
+@media(min-width:900px){
+  .hide{
+  display:none;
+}
+}
