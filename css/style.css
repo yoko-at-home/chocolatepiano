@@ -1099,6 +1099,21 @@ padding:15rem 0}
   position:relative;
   -webkit-transition:all 700ms ease-in;
 }
+@media only screen and (min-width:56.25em){
+  .panel{
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 90vh;
+  border-radius: 5px;
+  color: #fff;
+  cursor:pointer;
+  flex:0.5;
+  margin:2px;
+  position:relative;
+  -webkit-transition:all 700ms ease-in;
+}
+}
 
 .panel h3{
   font-size: 24px;
