@@ -1090,7 +1090,7 @@ padding:15rem 0}
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 60vh;
   border-radius: 5px;
   color: #fff;
   cursor:pointer;
@@ -1162,4 +1162,8 @@ display:none;
     .horizontal-list >li{
       margin:1rem;
       list-style: none;
+    }
+
+    a{
+      text-decoration: none;
     }
