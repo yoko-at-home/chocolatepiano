@@ -192,6 +192,7 @@ box-sizing:inherit}html{font-size:62.5%}
 @media only screen and (max-width:56.25em){html{font-size:50%}}
 @media only screen and (min-width:112.5em){html{font-size:75%}}
 body{
+  /* display: flex; */
 -webkit-box-sizing:border-box;
 box-sizing:border-box;
 padding:3rem;
@@ -1060,6 +1061,7 @@ padding:15rem 0}
   display:flex;
   padding-left: 0;
 }
+}
 /* 講師演奏活動CSS */
 /* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
 
@@ -1127,11 +1129,13 @@ display:none;
 }
 /* 横スクロール */
 .horizontal_nav{
+  display: flex;
   position: relative;
   z-index: 1000;
 }
     .horizontal-list {
       display: flex;
+      flex-direction: row;
       /* position: absolute; */
       bottom:0;
       margin-bottom: 1rem;
