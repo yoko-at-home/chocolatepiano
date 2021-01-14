@@ -1020,11 +1020,13 @@ margin-top:-10rem}}
     padding:10rem 0 15rem 0;
 margin-top:-10rem}} */
 .section-activity{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   background-color:#f7f7f7;
-  padding:15rem 0;
+  padding:10rem 0;
+  align-items: center;
+  text-align: center;
 }
 .section-stories{position:relative;
 padding:15rem 0}
@@ -1155,12 +1157,7 @@ display:none;
   .hide{
       display: block;
     }
-/* 携帯にのみ表示 */
-@media(min-width:900px){
-  .hide {
-  display:none;
-}
-}
+
 /* LESSON */
 /* kids */
 .section-kids{
@@ -1168,7 +1165,7 @@ display:none;
   flex-direction: column;
   justify-content: center;
   background-color:#f7f7f7;
-  padding:15rem 0;
+  padding:15rem 0.5rem 0 0.5rem;
   margin-bottom:3rem;
 }
 .lesson__wrapper{
@@ -1178,6 +1175,7 @@ display:none;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 5rem;
 }
 .photo_wrapper{
   display: flex;
@@ -1417,7 +1415,7 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
   flex-direction: column;
   justify-content: center;
   background-color:#f7f7f7;
-  padding:15rem 0;
+  /* padding:15rem 0; */
   margin:0 auto;
 }
 
@@ -1476,6 +1474,7 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top:5rem;
 }
 /* event-section */
 .row-event{
@@ -1593,9 +1592,10 @@ transform:scale(.95)}
   margin-top: 0;
   margin-bottom:2rem;
   font-size:5rem;
+  text-align: center;
 text-transform:uppercase;
 font-weight:700;
-display:inline-block;
+display:block;
 background-image:gradient(linear,left top,right top,from(#f040e7),to(#acdd52));
 background-image:linear-gradient(to right,#acdd52,#db7bf3);
 background-clip:text;
@@ -1613,7 +1613,7 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
   margin:3rem auto;
   font-size:3rem;
 font-weight:700;
-display:inline-block;
+display:block;
 background-image:gradient(linear,left top,right top,from(#f040e7),to(#acdd52));
 background-image:linear-gradient(to right,#acdd52,#db7bf3);
 background-clip:text;
@@ -1635,9 +1635,10 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
 
 .event__text {
   font-size: 2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   padding: 2rem;
   margin: 0 3rem;
+  text-align: center;
 }
 
 /* FOOTER */
