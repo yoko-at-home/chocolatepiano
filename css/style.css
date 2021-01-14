@@ -278,7 +278,8 @@ font-weight:700}
 width:100%;
 -o-object-fit:cover;
 object-fit:cover}
-.bg-mobile{background-image:url(../img/video-mobile.jpg);
+/* .bg-mobile{background-image:url(../img/video-mobile.jpg); */
+.bg-mobile{background-image:url(../img/rose.jpg);
 background-size:cover ;
 background-position:center;
 position:absolute;
