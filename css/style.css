@@ -1168,7 +1168,7 @@ display:none;
   flex-direction: column;
   justify-content: center;
   background-color:#f7f7f7;
-  /* padding:15rem 0; */
+  padding:15rem 0;
   margin-bottom:3rem;
 }
 .lesson__wrapper{
@@ -1333,6 +1333,7 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
   justify-content: center;
   background-color:#f7f7f7;
   text-align: center;
+  padding: 15rem 0;
 }
 
 @media only screen and (min-width:900px){
@@ -1473,6 +1474,8 @@ text-shadow:.5rem 1rem 2rem rgba(0,0,0,.2)}
 .section-activity__title__wrapper{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 /* event-section */
 .row-event{
